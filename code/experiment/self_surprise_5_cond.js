@@ -337,7 +337,7 @@ function generateProtocol(child, pastSessions) {
             'choiceRequired': false,
             'waitForEndAudio': true,
             'autoProceed': false,
-            'durationSeconds': 12,
+            'durationSeconds': 17,
             'parentTextBlock': parentTextBlock
         },
         'how-did-you-choose': {
