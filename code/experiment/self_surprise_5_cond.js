@@ -65,7 +65,7 @@ function generateProtocol(child, pastSessions) {
             'blocks': [{
                 'title': 'Welcome!'
             }, {
-                'text': 'Thank you for your interest in our study, \'Can You Remember Where The Stars Are?\''
+                'text': 'Thank you for your interest in our study, \'Let`s Find The Stars!\''
             }, {
                 'text': 'Here\'s a quick summary of what\'s about to happen:'
             }, {
