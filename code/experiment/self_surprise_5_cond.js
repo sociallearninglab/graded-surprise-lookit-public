@@ -340,17 +340,17 @@ function generateProtocol(child, pastSessions) {
             'durationSeconds': 17,
             'parentTextBlock': parentTextBlock
         },
-        'how-did-you-choose': {
-            'kind': 'exp-lookit-images-audio',
-            'generateProperties': `function(expData, sequence) { const cardWidth = ${cardWidth}; const cardHeight = ${cardHeight}; const cardsPerRow = ${cardsPerRow}; const horizontalSpacing = ${horizontalSpacing}; const verticalSpacing = ${verticalSpacing}; const startLeft = ${startLeft}; const startTop = ${startTop}; const starPositions = ${JSON.stringify(currentStarPositions)}; function isStarPosition(row, col) { return starPositions.some(pos => pos[0] === row && pos[1] === col); } const frameIds = [sequence[sequence.length - 10], sequence[sequence.length - 9], sequence[sequence.length - 8]]; const selections = frameIds.map(frameId => { const clickEvents = expData[frameId]?.eventTimings?.filter(event => event.eventType === "exp-lookit-images-audio:clickImage") || []; return clickEvents.length > 0 ? clickEvents[clickEvents.length - 1].imageId : undefined; }).filter(id => id !== undefined); let images = []; for (let i = 0; i < 30; i++) { const row = Math.floor(i / cardsPerRow); const col = i % cardsPerRow; const cardNum = String(i + 1); const isSelected = selections.includes(cardNum); const isStar = isStarPosition(row, col); images.push({ id: cardNum, src: isSelected ? (isStar ? "card_star.png" : "card_star.png") : "card_back.png", left: startLeft + (col * horizontalSpacing), top: startTop + (row * verticalSpacing), width: cardWidth, height: cardHeight, nonChoiceOption: true }); } return { images: images }; }`,
-            'baseDir': mediaBaseUrl,
-            'audio': 'card_selection_how',
-            'audioTypes': ['mp3'],
-            'choiceRequired': false,
-            'waitForEndAudio': true,
-            'autoProceed': false,
-            'parentTextBlock': parentTextBlock
-        },
+        // 'how-did-you-choose': {
+           // 'kind': 'exp-lookit-images-audio',
+            // 'generateProperties': `function(expData, sequence) { const cardWidth = ${cardWidth}; const cardHeight = ${cardHeight}; const cardsPerRow = ${cardsPerRow}; const horizontalSpacing = ${horizontalSpacing}; const verticalSpacing = ${verticalSpacing}; const startLeft = ${startLeft}; const startTop = ${startTop}; const starPositions = ${JSON.stringify(currentStarPositions)}; function isStarPosition(row, col) { return starPositions.some(pos => pos[0] === row && pos[1] === col); } const frameIds = [sequence[sequence.length - 10], sequence[sequence.length - 9], sequence[sequence.length - 8]]; const selections = frameIds.map(frameId => { const clickEvents = expData[frameId]?.eventTimings?.filter(event => event.eventType === "exp-lookit-images-audio:clickImage") || []; return clickEvents.length > 0 ? clickEvents[clickEvents.length - 1].imageId : undefined; }).filter(id => id !== undefined); let images = []; for (let i = 0; i < 30; i++) { const row = Math.floor(i / cardsPerRow); const col = i % cardsPerRow; const cardNum = String(i + 1); const isSelected = selections.includes(cardNum); const isStar = isStarPosition(row, col); images.push({ id: cardNum, src: isSelected ? (isStar ? "card_star.png" : "card_star.png") : "card_back.png", left: startLeft + (col * horizontalSpacing), top: startTop + (row * verticalSpacing), width: cardWidth, height: cardHeight, nonChoiceOption: true }); } return { images: images }; }`,
+            // 'baseDir': mediaBaseUrl,
+            // 'audio': 'card_selection_how',
+            // 'audioTypes': ['mp3'],
+            // 'choiceRequired': false,
+            // 'waitForEndAudio': true,
+            // 'autoProceed': false,
+            // 'parentTextBlock': parentTextBlock
+        // },
         'final-thank-you': {
             'kind': 'exp-lookit-video',
             'video': {
@@ -406,7 +406,6 @@ function generateProtocol(child, pastSessions) {
             'surprise-rating-yes-no',
             'surprise-rating-graded',
             'surprise-why-explanation',
-            'how-did-you-choose',
             'final-thank-you',
             'stop-recording',
             'email-survey',
