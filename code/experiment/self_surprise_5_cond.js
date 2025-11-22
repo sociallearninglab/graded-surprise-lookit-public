@@ -300,7 +300,7 @@ function generateProtocol(child, pastSessions) {
         },
         'reveal-cards': {
             'kind': 'exp-lookit-images-audio',
-            'generateProperties': `function(expData, sequence) { let images = []; images.push({ id: "topImage", src: "selection_three_stars.png", left: 15, top: 0, width: 70, height: 45, nonChoiceOption: true }); return { images: images }; } return { images: images }; }`,
+            'generateProperties': `function(expData, sequence) { let images = []; images.push({ id: "topImage", src: "selection_three_stars.png", left: 15, top: 0, width: 70, height: 45, nonChoiceOption: true }); return { images: images }; }`,
             'baseDir': mediaBaseUrl,
             'audio': 'cards_selection_reveal',
             'waitForEndAudio': true,
@@ -337,7 +337,7 @@ function generateProtocol(child, pastSessions) {
             'choiceRequired': false,
             'waitForEndAudio': true,
             'autoProceed': false,
-            'durationSeconds': 17,
+            'durationSeconds': 13,
             'parentTextBlock': parentTextBlock
         },
         // 'how-did-you-choose': {
