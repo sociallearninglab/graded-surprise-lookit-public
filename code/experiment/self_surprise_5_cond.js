@@ -71,7 +71,7 @@ function generateProtocol(child, pastSessions) {
             }, {
                 'text': '1. Webcam Setup and Video Consent: First, we\'ll be checking that your webcam is working. Then you and your child will give your consent to participate in this research.'
             }, {
-                'text': '2. Start the Study: When you click the \'Start the game!\' button, the study will begin! This study will take about 5-7 minutes in total.'
+                'text': '2. Start the Study: When you click the \'Start the game!\' button, the study will begin! This study will take about 10 minutes in total.'
             }, {
                 'text': 'Thank you so much for helping us with our science! We hope you have fun.'
             }],
@@ -87,7 +87,7 @@ function generateProtocol(child, pastSessions) {
             'template': 'consent_005',
             'PIName': 'Adani Abutto',
             'institution': 'Stanford University',
-            'PIContact': 'Adani Abutto (sll_lookit@stanford.edu)',
+            'PIContact': 'Adani Abutto (contact: sll_lookit@stanford.edu)',
             'purpose': 'Starting in their earliest childhood years, learners routinely experience their actions leading to unexpected outcomes. Achieving things outside of one\'s expectations is a curiosity-inducing, joyful learning experience; it results in surprise and can spur learners on to further explore how they did it, and what else they may be able to do in the world. We aim to investigate whether children early in development are sensitive and responsive to such experiences, and how they can be elicited reliably.',
             'procedures': 'In this study, your child will play a simple card game! In this game, your child will learn about the cards, make some choices while playing with the cards, and then answer a few short questions. This study has been designed to be fun and appropriate for young children.',
             'risk_statement': 'There are no expected risks if you participate in the study.',
