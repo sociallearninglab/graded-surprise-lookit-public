@@ -154,7 +154,7 @@ function generateProtocol(child, pastSessions) {
                     "text": "This research wouldn't be possible without awesome parents like you."
                 }, {
                     "title": "Some Background Information:",
-                    "text": "Children begin as universal novices; once they start taking action in the world, they start experiencing success on tasks they did not know they could succeed on (e.g., tying their shoes by themselves for the first time, or getting a \"lucky draw\" in a game). Such experiences are joyful and surprising. Here, we investigate how we can bring about such experiences of \"self-surprise,\" and how they relate to learners' later exploration of their capabilities. This study will help us understand what sparks children's surprise and enhances their desire to continue learning about themselves and the world."
+                    "text": "This research wouldn't be possible without awesome parents like you."}, {"title": "Some Background Information:", "text": "Young children enter the world as novices; once they begin trying their hand at new things, they start experiencing success on tasks they did not know they could succeed on. With this study, we examine what brings about such 'unexpected success' experiences, and how young children respond to them.\n\nTo this end, your child played a card game with stars: They saw many cards, only some of which had a star, and were then challenged to find the stars after the cards were turned face down and shuffled. Your child was assigned to one of five conditions: There were either a lot of stars (27 out of 30), a good amount of stars (21 out of 30), some stars (15 out of 30), not many stars (9 out of 21), or very few stars (3 out of 30). They then had to locate the star cards by guessing, which either made the game hard (if there were very few or not many stars) or easy (if there were some, a good amount, or a lot of stars). We then asked your child how many stars they think they will get. Since children tend to be very confident in their abilities, your child was likely to have said that they will get all 3 stars regardless of whether the game was hard or easy (depending on the number of stars). Your child then got to make their pick of cards. After making their pick, they were shown that they found all three stars, and we asked them whether they were surprised and if so, how much. If your child was in one of the ‘hard’ conditions (very few or not many stars), they were likely surprised by their success because they weren’t sure they could get three stars! If your child was in one of the ‘easy’ conditions (some, a good amount, or a lot of stars) they were likely not surprised by their success, because they knew they could get three stars.\n\nIn sum, this study is a first step in understanding how different experiences of success (unexpected, expected) relate to surprise in young children. In future research, we will explore how these surprise experiences relate to children’s desire to continue learning about themselves and the world."
                 }, {
                     "title": "Additional Resources:",
                     "text": "To learn more about this topic, you can check out some of the following works and resources:<br><a href='https://www.youtube.com/watch?v=y1KIVZw7Jxk' target='_blank'>TED Talk by Laura Schulz: The surprisingly logical minds of babies </a><br><a href='https://www.youtube.com/watch?v=muUbUspLgJ8' target='_blank'> Science, problem solving and play - Sara Baker</a>"
@@ -163,7 +163,7 @@ function generateProtocol(child, pastSessions) {
                     "text": "To thank you for your participation, we'll be emailing you a $5 USD Amazon gift card - this should arrive in your inbox within the next week after we confirm your consent video and check that your child is in the age range for this study (If you don't hear from us by then, feel free to reach out!). If you participate again with another child in the age range, you'll receive one gift card per child."
                 }, {
                     "title": "Questions or Concerns:",
-                    "text": "Please do not hesitate to contact Adani Abutto at aabutto@stanford.edu"
+                    "text": "Please do not hesitate to contact Adani Abutto (contact: sll_lookit@stanford.edu)"
                 }]
             }
         }
@@ -388,6 +388,7 @@ function generateProtocol(child, pastSessions) {
         frames: frames,
         sequence: [
             'welcome',
+            'email-survey',
             'video-config',
             'video-consent',
             'positioning',
@@ -408,7 +409,6 @@ function generateProtocol(child, pastSessions) {
             'surprise-why-explanation',
             'final-thank-you',
             'stop-recording',
-            'email-survey',
             'exit-survey'
         ]
     };
